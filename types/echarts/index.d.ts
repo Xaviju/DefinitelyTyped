@@ -1302,6 +1302,14 @@ declare namespace echarts {
                  *
                  * @see https://echarts.apache.org/en/option.html#yAxis.axisLabel
                  */
+                
+                minorTick?: CartesianAxis.MinorTick;
+
+                /**
+                 * Settings related to axis label.
+                 *
+                 * @see https://echarts.apache.org/en/option.html#yAxis.minorTick
+                 */
 
                 axisLabel?: CartesianAxis.Label;
 
@@ -1398,6 +1406,16 @@ declare namespace echarts {
                     alignWithLabel?: boolean;
                     interval?: number | Function;
                     inside?: boolean;
+                    length?: number;
+                    lineStyle?: LineStyle;
+                }
+                
+                /**
+                 * @todo describe
+                 */
+                interface MinorTick {
+                    show?: boolean;
+                    splitNumber?: number;
                     length?: number;
                     lineStyle?: LineStyle;
                 }
